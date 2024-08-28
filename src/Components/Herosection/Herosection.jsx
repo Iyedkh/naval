@@ -21,7 +21,8 @@ const Herosection = () => {
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           loop={true}
-          className="h-[100vh] w-full"
+          speed={1500} // Adjusts the speed of the transition in milliseconds
+          className="h-[80vh] w-full"
         >
           <SwiperSlide>
             <img
