@@ -7,13 +7,12 @@ import logo5 from "../../src/images/Features/f5.png";
 import logo6 from "../../src/images/Features/f6.png";
 import image1 from "../../src/images/Features/fb11.png";
 import image2 from "../../src/images/Features/fb22.png";
-import { inView, useAnimation, useInView, motion } from "framer-motion";
+import { useAnimation, useInView, motion } from "framer-motion";
 
 const Features = () => {
-  const { innerWidth: width, innerHeight: height } = window;
+  const { innerWidth: width } = window;
   const ref = useRef(null);
   const isInView = useInView(ref);
-
   const mainControlls = useAnimation();
 
   useEffect(() => {
@@ -21,83 +20,85 @@ const Features = () => {
       mainControlls.start("visible");
     }
   }, [isInView]);
+
   return (
     <>
       <div className="w-[70%] h-[2px] bg-gradient-to-r from-blue-400 to-violet-500"></div>
       <div className="max-w-screen overflow-x-hidden font-poppins">
-        {/* features section */}
+        {/* Features section */}
         {width < 631 ? (
           <>
-            <section className=" text-black">
+            <section className="text-black">
               <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
                 <div>
-                  <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl ">
-                    Empowering Business
+                  <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl">
+                    Naval Maintenance and Repair
                   </h2>
-                  <p className="max-w-3xl mx-auto mt-4 text-xl text-center ">
-                    Growth Through Advanced Technology Solutions, Analytics and
-                    Professionaly Trained Personnel
+                  <p className="max-w-3xl mx-auto mt-4 text-xl text-center">
+                    Advanced Technology Solutions, Trained Personnel, and Data
+                    Analysis to Optimize Your Naval Operations
                   </p>
                 </div>
                 <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                   <div>
-                    <h3 className="text-2xl font-bold tracking-tight sm:text-3xl ">
-                      Inovation Begins Here
+                    <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">
+                      Innovation for the Marine Industry
                     </h3>
-                    <p className="mt-3 text-lg ">
-                      Unleash business growth with advanced technology
-                      solutions, optimizing operations, integrating innovative
-                      technologies, and receiving personalized support.
+                    <p className="mt-3 text-lg">
+                      Enhance your naval maintenance operations with advanced
+                      technology solutions that optimize your processes,
+                      integrate innovative technologies, and offer personalized
+                      support.
                     </p>
                     <div className="mt-12 space-y-12">
                       <div className="flex">
                         <div className="flex-shrink-0">
                           <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
-                            <img src={logo1} alt="logo1" />
+                            <img src={logo1} alt="Advanced Algorithms" />
                           </div>
                         </div>
                         <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 ">
+                          <h4 className="text-lg font-medium leading-6">
                             Advanced Algorithmic Solutions
                           </h4>
-                          <p className="mt-2 ">
-                            Our advanced algorithms optimize your operations,
-                            boosting efficiency and profitability. Make
-                            data-driven decisions with actionable insights.
+                          <p className="mt-2">
+                            Our advanced algorithms optimize your maintenance
+                            operations, improving efficiency and profitability. Make
+                            informed decisions with actionable data.
                           </p>
                         </div>
                       </div>
                       <div className="flex">
                         <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                            <img src={logo2} alt="logo2" />
+                          <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                            <img src={logo2} alt="Innovative Technology Integration" />
                           </div>
                         </div>
                         <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 ">
+                          <h4 className="text-lg font-medium leading-6">
                             Innovative Technology Integration
                           </h4>
-                          <p className="mt-2 ">
-                            Seamlessly integrate cutting-edge technologies like
-                            AI, IoT, and cloud computing. Automate tasks,
-                            improve communication, and unlock growth potential.
+                          <p className="mt-2">
+                            Integrate cutting-edge technologies like AI and IoT.
+                            Automate tasks, enhance communication, and unlock your
+                            growth potential.
                           </p>
                         </div>
                       </div>
                       <div className="flex">
                         <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                            <img src={logo3} alt="logo3" />
+                          <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                            <img src={logo3} alt="Trained Personnel Support" />
                           </div>
                         </div>
                         <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 ">
+                          <h4 className="text-lg font-medium leading-6">
                             Trained Personnel Support
                           </h4>
-                          <p className="mt-2 ">
+                          <p className="mt-2">
                             Our trained experts ensure smooth implementation and
-                            ongoing guidance. Leverage our software effectively
-                            with personalized assistance.
+                            ongoing support. Utilize our software effectively with
+                            personalized assistance.
                           </p>
                         </div>
                       </div>
@@ -107,7 +108,7 @@ const Features = () => {
                     <div aria-hidden="true" className="mt-10 lg:mt-0">
                       <img
                         src={image1}
-                        alt="image1"
+                        alt="Advanced Technology for Naval Maintenance"
                         className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
                       />
                     </div>
@@ -116,64 +117,62 @@ const Features = () => {
                 <div>
                   <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
                     <div className="lg:col-start-2">
-                      <h3 className="text-2xl font-bold tracking-tight sm:text-3xl ">
-                        Data-Driven Decisions, Personalized Solutions
+                      <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">
+                        Data-Driven Decisions, Customized Solutions
                       </h3>
-                      <p className="mt-3 text-lg ">
-                        Data-driven decisions. Personalized solutions.
-                        Continuous innovation. Propel your business forward with
-                        our powerful analytics, tailored to your needs, and
-                        future-proofed by our commitment to innovation.
+                      <p className="mt-3 text-lg">
+                        Make informed decisions with our powerful data analytics.
+                        Our customized solutions cater to your specific naval
+                        maintenance needs.
                       </p>
                       <div className="mt-12 space-y-12">
                         <div className="flex">
                           <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                              <img src={logo4} alt="logo4" />
+                            <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                              <img src={logo4} alt="Powerful Analytics Capabilities" />
                             </div>
                           </div>
                           <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 ">
+                            <h4 className="text-lg font-medium leading-6">
                               Powerful Analytics Capabilities
                             </h4>
-                            <p className="mt-2 ">
-                              Extract valuable insights from your data with
-                              comprehensive visualizations. Monitor KPIs, track
-                              trends, and identify areas for improvement.
+                            <p className="mt-2">
+                              Gain valuable insights from your data with comprehensive
+                              visualizations. Monitor KPIs, track trends, and identify
+                              areas for improvement.
                             </p>
                           </div>
                         </div>
                         <div className="flex">
                           <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                              <img src={logo5} alt="logo5" />
+                            <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                              <img src={logo5} alt="Customized Solutions" />
                             </div>
                           </div>
                           <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 ">
-                              Personalized Solutions
+                            <h4 className="text-lg font-medium leading-6">
+                              Customized Solutions
                             </h4>
-                            <p className="mt-2 ">
-                              Tailored software solutions to address your unique
-                              needs. Achieve sustainable growth by aligning with
-                              your business objectives.
+                            <p className="mt-2">
+                              Tailored software solutions to meet your specific needs.
+                              Achieve sustainable growth by aligning your naval
+                              operations with your business goals.
                             </p>
                           </div>
                         </div>
                         <div className="flex">
                           <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                              <img src={logo6} alt="logo6" />
+                            <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                              <img src={logo6} alt="Continuous Innovation and Updates" />
                             </div>
                           </div>
                           <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 ">
-                              Continuous Innovation and Upgrades
+                            <h4 className="text-lg font-medium leading-6">
+                              Continuous Innovation and Updates
                             </h4>
-                            <p className="mt-2 ">
-                              Stay ahead with the latest features and
-                              functionalities. Adapt to market dynamics and gain
-                              a competitive edge through continuous innovation.
+                            <p className="mt-2">
+                              Stay ahead with the latest features and enhancements.
+                              Adapt to market dynamics with ongoing innovation.
                             </p>
                           </div>
                         </div>
@@ -182,7 +181,7 @@ const Features = () => {
                     <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
                       <img
                         src={image2}
-                        alt="image2"
+                        alt="Innovation in Naval Maintenance"
                         className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
                       />
                     </div>
@@ -193,228 +192,113 @@ const Features = () => {
           </>
         ) : (
           <>
-            <section className=" text-black">
+            <section className="text-black">
               <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
                 <div>
-                  <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl ">
-                    Empowering Business
+                  <h2 className="text-3xl font-bold tracking-tight text-center sm:text-5xl">
+                    Naval Maintenance and Repair
                   </h2>
-                  <p className="max-w-3xl mx-auto mt-4 text-xl text-center ">
-                    Growth Through Advanced Technology Solutions, Analytics and
-                    Professionaly Trained Personnel
+                  <p className="max-w-3xl mx-auto mt-4 text-xl text-center">
+                    Advanced Technology Solutions, Trained Personnel, and Data
+                    Analysis to Optimize Your Naval Operations
                   </p>
                 </div>
                 <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-                  <div>
-                    <h3 className="text-2xl font-bold tracking-tight sm:text-3xl ">
-                      Inovation Begins Here
+                  <motion.div
+                    ref={ref}
+                    variants={{
+                      hidden: { opacity: 0, x: -75 },
+                      visible: { opacity: 1, x: 0 },
+                    }}
+                    initial="hidden"
+                    animate={mainControlls}
+                    transition={{ duration: 0.5, delay: 0.25 }}
+                  >
+                    <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">
+                      Innovation for the Marine Industry
                     </h3>
-                    <p className="mt-3 text-lg ">
-                      Unleash business growth with advanced technology
-                      solutions, optimizing operations, integrating innovative
-                      technologies, and receiving personalized support.
+                    <p className="mt-3 text-lg">
+                      Enhance your naval maintenance operations with advanced
+                      technology solutions that optimize your processes,
+                      integrate innovative technologies, and offer personalized
+                      support.
                     </p>
                     <div className="mt-12 space-y-12">
-                      <motion.div
-                        ref={ref}
-                        variants={{
-                          hidden: { opacity: 0, y: 75 },
-                          visible: { opacity: 1, y: 0 },
-                        }}
-                        initial="hidden"
-                        animate={mainControlls}
-                        transition={{ duration: 0.5, delay: 0.15 }}
-                        className="flex"
-                      >
+                      <div className="flex">
                         <div className="flex-shrink-0">
                           <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
-                            <img src={logo1} alt="logo1" />
+                            <img src={logo1} alt="Advanced Algorithms" />
                           </div>
                         </div>
                         <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 ">
+                          <h4 className="text-lg font-medium leading-6">
                             Advanced Algorithmic Solutions
                           </h4>
-                          <p className="mt-2 ">
-                            Our advanced algorithms optimize your operations,
-                            boosting efficiency and profitability. Make
-                            data-driven decisions with actionable insights.
+                          <p className="mt-2">
+                            Our advanced algorithms optimize your maintenance
+                            operations, improving efficiency and profitability. Make
+                            informed decisions with actionable data.
                           </p>
                         </div>
-                      </motion.div>
-                      <motion.div
-                        ref={ref}
-                        variants={{
-                          hidden: { opacity: 0, y: 75 },
-                          visible: { opacity: 1, y: 0 },
-                        }}
-                        initial="hidden"
-                        animate={mainControlls}
-                        transition={{ duration: 0.5, delay: 0.35 }}
-                        className="flex"
-                      >
+                      </div>
+                      <div className="flex">
                         <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                            <img src={logo2} alt="logo2" />
+                          <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                            <img src={logo2} alt="Innovative Technology Integration" />
                           </div>
                         </div>
                         <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 ">
+                          <h4 className="text-lg font-medium leading-6">
                             Innovative Technology Integration
                           </h4>
-                          <p className="mt-2 ">
-                            Seamlessly integrate cutting-edge technologies like
-                            AI, IoT, and cloud computing. Automate tasks,
-                            improve communication, and unlock growth potential.
+                          <p className="mt-2">
+                            Integrate cutting-edge technologies like AI and IoT.
+                            Automate tasks, enhance communication, and unlock your
+                            growth potential.
                           </p>
                         </div>
-                      </motion.div>
-                      <motion.div
-                        ref={ref}
-                        variants={{
-                          hidden: { opacity: 0, y: 75 },
-                          visible: { opacity: 1, y: 0 },
-                        }}
-                        initial="hidden"
-                        animate={mainControlls}
-                        transition={{ duration: 0.5, delay: 0.55 }}
-                        className="flex"
-                      >
+                      </div>
+                      <div className="flex">
                         <div className="flex-shrink-0">
-                          <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                            <img src={logo3} alt="logo3" />
+                          <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                            <img src={logo3} alt="Trained Personnel Support" />
                           </div>
                         </div>
                         <div className="ml-4">
-                          <h4 className="text-lg font-medium leading-6 ">
+                          <h4 className="text-lg font-medium leading-6">
                             Trained Personnel Support
                           </h4>
-                          <p className="mt-2 ">
+                          <p className="mt-2">
                             Our trained experts ensure smooth implementation and
-                            ongoing guidance. Leverage our software effectively
-                            with personalized assistance.
+                            ongoing support. Utilize our software effectively with
+                            personalized assistance.
                           </p>
                         </div>
-                      </motion.div>
+                      </div>
                     </div>
-                  </div>
-                  <div ref={ref}>
-                    <motion.div
-                      variants={{
-                        hidden: { opacity: 0, x: 75 },
-                        visible: { opacity: 1, x: 0 },
-                      }}
-                      initial="hidden"
-                      animate={mainControlls}
-                      transition={{ duration: 0.5, delay: 0.25 }}
-                      aria-hidden="true"
-                      className="mt-10 lg:mt-0"
-                    >
-                      <img
-                        src={image1}
-                        alt="image1"
-                        className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
-                      />
-                    </motion.div>
-                  </div>
+                  </motion.div>
+                  <motion.div
+                    className="flex items-center justify-center p-3"
+                    ref={ref}
+                    variants={{
+                      hidden: { opacity: 0, x: 75 },
+                      visible: { opacity: 1, x: 0 },
+                    }}
+                    initial="hidden"
+                    animate={mainControlls}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                  >
+                    <img
+                      src={image1}
+                      alt="Advanced Technology for Naval Maintenance"
+                      className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
+                    />
+                  </motion.div>
                 </div>
                 <div>
                   <div className="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
-                    <div className="lg:col-start-2">
-                      <h3 className="text-2xl font-bold tracking-tight sm:text-3xl ">
-                        Data-Driven Decisions, Personalized Solutions
-                      </h3>
-                      <p className="mt-3 text-lg ">
-                        Data-driven decisions. Personalized solutions.
-                        Continuous innovation. Propel your business forward with
-                        our powerful analytics, tailored to your needs, and
-                        future-proofed by our commitment to innovation.
-                      </p>
-                      <div className="mt-12 space-y-12">
-                        <motion.div
-                          ref={ref}
-                          variants={{
-                            hidden: { opacity: 0, y: -75 },
-                            visible: { opacity: 1, y: 0 },
-                          }}
-                          initial="hidden"
-                          animate={mainControlls}
-                          transition={{ duration: 0.5, delay: 0.15 }}
-                          className="flex"
-                        >
-                          <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                              <img src={logo4} alt="logo4" />
-                            </div>
-                          </div>
-                          <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 ">
-                              Powerful Analytics Capabilities
-                            </h4>
-                            <p className="mt-2 ">
-                              Extract valuable insights from your data with
-                              comprehensive visualizations. Monitor KPIs, track
-                              trends, and identify areas for improvement.
-                            </p>
-                          </div>
-                        </motion.div>
-                        <motion.div
-                          ref={ref}
-                          variants={{
-                            hidden: { opacity: 0, y: -75 },
-                            visible: { opacity: 1, y: 0 },
-                          }}
-                          initial="hidden"
-                          animate={mainControlls}
-                          transition={{ duration: 0.5, delay: 0.35 }}
-                          className="flex"
-                        >
-                          <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                              <img src={logo5} alt="logo5" />
-                            </div>
-                          </div>
-                          <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 ">
-                              Personalized Solutions
-                            </h4>
-                            <p className="mt-2 ">
-                              Tailored software solutions to address your unique
-                              needs. Achieve sustainable growth by aligning with
-                              your business objectives.
-                            </p>
-                          </div>
-                        </motion.div>
-                        <motion.div
-                          ref={ref}
-                          variants={{
-                            hidden: { opacity: 0, y: -75 },
-                            visible: { opacity: 1, y: 0 },
-                          }}
-                          initial="hidden"
-                          animate={mainControlls}
-                          transition={{ duration: 0.5, delay: 0.55 }}
-                          className="flex"
-                        >
-                          <div className="flex-shrink-0">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-md  dark:text-gray-900">
-                              <img src={logo6} alt="logo6" />
-                            </div>
-                          </div>
-                          <div className="ml-4">
-                            <h4 className="text-lg font-medium leading-6 ">
-                              Continuous Innovation and Upgrades
-                            </h4>
-                            <p className="mt-2 ">
-                              Stay ahead with the latest features and
-                              functionalities. Adapt to market dynamics and gain
-                              a competitive edge through continuous innovation.
-                            </p>
-                          </div>
-                        </motion.div>
-                      </div>
-                    </div>
                     <motion.div
+                      className="lg:col-start-1 lg:row-start-1"
                       ref={ref}
                       variants={{
                         hidden: { opacity: 0, x: -75 },
@@ -422,14 +306,85 @@ const Features = () => {
                       }}
                       initial="hidden"
                       animate={mainControlls}
-                      transition={{ duration: 0.5, delay: 0.15 }}
-                      className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1"
+                      transition={{ duration: 0.5, delay: 0.75 }}
                     >
                       <img
                         src={image2}
-                        alt="image2"
+                        alt="Innovation in Naval Maintenance"
                         className="taos:translate-x-[200px] taos:opacity-0 hover:-translate-y-2 transition ease-in-out duration-300 hover:drop-shadow-xl mx-auto rounded-lg shadow-lg dark:bg-gray-500"
                       />
+                    </motion.div>
+                    <motion.div
+                      className="lg:col-start-2"
+                      ref={ref}
+                      variants={{
+                        hidden: { opacity: 0, x: 75 },
+                        visible: { opacity: 1, x: 0 },
+                      }}
+                      initial="hidden"
+                      animate={mainControlls}
+                      transition={{ duration: 0.5, delay: 1 }}
+                    >
+                      <h3 className="text-2xl font-bold tracking-tight sm:text-3xl">
+                        Data-Driven Decisions, Customized Solutions
+                      </h3>
+                      <p className="mt-3 text-lg">
+                        Make informed decisions with our powerful data analytics.
+                        Our customized solutions cater to your specific naval
+                        maintenance needs.
+                      </p>
+                      <div className="mt-12 space-y-12">
+                        <div className="flex">
+                          <div className="flex-shrink-0">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                              <img src={logo4} alt="Powerful Analytics Capabilities" />
+                            </div>
+                          </div>
+                          <div className="ml-4">
+                            <h4 className="text-lg font-medium leading-6">
+                              Powerful Analytics Capabilities
+                            </h4>
+                            <p className="mt-2">
+                              Gain valuable insights from your data with comprehensive
+                              visualizations. Monitor KPIs, track trends, and identify
+                              areas for improvement.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex">
+                          <div className="flex-shrink-0">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                              <img src={logo5} alt="Customized Solutions" />
+                            </div>
+                          </div>
+                          <div className="ml-4">
+                            <h4 className="text-lg font-medium leading-6">
+                              Customized Solutions
+                            </h4>
+                            <p className="mt-2">
+                              Tailored software solutions to meet your specific needs.
+                              Achieve sustainable growth by aligning your naval
+                              operations with your business goals.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex">
+                          <div className="flex-shrink-0">
+                            <div className="flex items-center justify-center w-12 h-12 rounded-md dark:text-gray-900">
+                              <img src={logo6} alt="Continuous Innovation and Updates" />
+                            </div>
+                          </div>
+                          <div className="ml-4">
+                            <h4 className="text-lg font-medium leading-6">
+                              Continuous Innovation and Updates
+                            </h4>
+                            <p className="mt-2">
+                              Stay ahead with the latest features and enhancements.
+                              Adapt to market dynamics with ongoing innovation.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </motion.div>
                   </div>
                 </div>
@@ -437,10 +392,8 @@ const Features = () => {
             </section>
           </>
         )}
-
-        {/* end */}
       </div>
-      <div className="flex justify-end ml-[30%] w-[70%] h-[2px] bg-gradient-to-r from-blue-400 to-violet-500"></div>
+      <div className="w-[70%] h-[2px] bg-gradient-to-r from-blue-400 to-violet-500"></div>
     </>
   );
 };

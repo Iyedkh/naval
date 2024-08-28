@@ -1,177 +1,93 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import heroImage from '../../images/heroImage.jpg'
-import Stars from '../../images/stars.png'
-import {motion} from 'framer-motion'
-
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import heroImage from '../../images/kokeshi-9DLoHFsfi3g-unsplash.jpg';
+import heroImage2 from '../../images/nopparuj-lamaikul-K0UZ0dxFaDk-unsplash.jpg';
+import heroImage3 from '../../images/vidar-nordli-mathisen-GsuPuCpVcN4-unsplash.jpg';
+import Stars from '../../images/stars.png';
+import { motion } from 'framer-motion';
 
 const Herosection = () => {
   return (
-    <div className="font-poppins overflow-x-hidden">
-      {/* component from tailgrids */}
+    <div className="font-poppins overflow-x-hidden relative">
+      <div className="relative bg-[#e0e0e0]">
+        {/* Swiper Section */}
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          loop={true}
+          className="h-[100vh] w-full"
+        >
+          <SwiperSlide>
+            <img
+              src={heroImage}
+              alt="hero1"
+              className="w-full h-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={heroImage2}
+              alt="hero2"
+              className="w-full h-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={heroImage3}
+              alt="hero3"
+              className="w-full h-full object-cover"
+            />
+          </SwiperSlide>
+        </Swiper>
 
-      <div class="relative  pt-[120px] pb-[110px] lg:pt-[150px] bg-[#e0e0e0]">
-        <div class="container mx-auto px-10">
-          <div class="-mx-4 flex flex-wrap">
-            <div class="w-full px-4 lg:w-5/12">
-              <div class="hero-content">
-                <motion.div
-                  variants={{
-                    visible: { opacity: 1, y: 0 },
-                    hidden: { opacity: 0, y: 75 },
-                  }}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ duration: 0.5, delay: 0.25 }}
-                >
-                  <h1 class="text-transparent bg-clip-text bg-gradient-to-r sm:text-8xl text-2xl from-blue-400 to-emerald-600 mb-3  font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]">
-                    Here you can
-                    <br />
-                    <span className="sm:text-8xl text-6xl">
-                      Level Up Your Business
-                    </span>
-                  </h1>
-                  <p class="text-body-color text-sm mb-8 max-w-[480px] sm:text-base">
-                    Welcome and thank you for taking your time to take a look at
-                    our solutions, wee can ensure you that wee will take your
-                    Business to the next level, so hang in tight and lets Level
-                    UP!
-                  </p>
-                </motion.div>
-                <motion.div
-                  variants={{
-                    visible: { opacity: 1, x: 0 },
-                    hidden: { opacity: 0, x: -75 },
-                  }}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ duration: 0.5, delay: 0.25 }}
-                >
-                  <ul class="flex flex-wrap items-center">
-                    <li>
-                      <Link
-                        to="#"
-                        class="bg-blue-400 inline-flex items-center justify-center rounded-lg py-4 px-6 text-center text-base font-normal text-white hover:bg-blue-500 sm:px-10 lg:px-8 xl:px-10"
-                      >
-                        Get Started
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="#"
-                        class="bg-blue-200/80 ml-6 inline-flex items-center justify-center rounded-lg py-4 px-6 text-center text-black font-normal hover:bg-blue-200 sm:px-10 lg:px-8 xl:px-10"
-                      >
-                        Take a look
-                      </Link>
-                    </li>
-                  </ul>
-                </motion.div>
-
-                <motion.div
-                  variants={{
-                    visible: { opacity: 1 },
-                    hidden: { opacity: 0 },
-                  }}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ duration: 0.8, delay: 0.25 }}
-                  class="clients pt-16"
-                >
-                  <h6 class="text-body-color mb-2 flex items-center text-xs font-normal">
-                    Some Of Our Clients
-                    <span class="bg-body-color ml-2 inline-block h-[1px] w-8"></span>
-                  </h6>
-                  <div class="flex items-center">
-                    <div class="mr-4 w-full py-3">
-                      <img
-                        src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/ayroui.svg"
-                        alt="ayroui"
-                      />
-                    </div>
-                    <div class="mr-4 w-full py-3">
-                      <img
-                        src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/graygrids.svg"
-                        alt="graygrids"
-                      />
-                    </div>
-                    <div class="mr-4 w-full py-3">
-                      <img
-                        src="https://cdn.tailgrids.com/2.0/image/assets/images/brands/uideck.svg"
-                        alt="uideck"
-                      />
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-            <div class="hidden px-4 lg:block lg:w-1/12"></div>
-            <div class="w-full px-4 lg:w-6/12">
-              <div class="lg:ml-auto lg:text-right">
-                <motion.div
-                  variants={{
-                    visible: { opacity: 1, x: 0, filter: "blur(0px)" },
-                    hidden: { opacity: 0, x: 75, filter: "blur(5px)" },
-                  }}
-                  initial="hidden"
-                  animate="visible"
-                  transition={{ duration: 0.5, delay: 0.25 }}
-                  class="relative z-10 inline-block pt-11 lg:pt-0 mt-6"
-                >
-                  <img
-                    src={heroImage}
-                    alt="hero"
-                    class="max-w-full lg:ml-auto rounded-l-[20%] rounded-br-[6%]"
-                  />
-                  <img
-                    src={Stars}
-                    alt="stars"
-                    className="z-20 w-28 absolute mt-[-105%] right-[-5%] opacity-70 hover:opacity-100"
-                  />
-                  <span class="absolute -left-8 -bottom-8 z-[-1]">
-                    <svg
-                      width="93"
-                      height="93"
-                      viewBox="0 0 93 93"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="2.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="2.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="2.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="2.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="2.5" cy="90.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="24.5" cy="90.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="46.5" cy="90.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="68.5" cy="90.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="2.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="24.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="46.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="68.5" r="2.5" fill="#3056D3" />
-                      <circle cx="90.5" cy="90.5" r="2.5" fill="#3056D3" />
-                    </svg>
-                  </span>
-                </motion.div>
-              </div>
-            </div>
+        {/* Text Content */}
+        <div className="absolute inset-0 z-10 flex items-center justify-center px-10">
+          <div className="max-w-4xl text-center bg-black bg-opacity-50 p-8 rounded-lg">
+            <motion.div
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 75 },
+              }}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.5, delay: 0.25 }}
+            >
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-600 font-bold leading-snug text-2xl sm:text-4xl lg:text-6xl mb-3">
+                Expert Naval Maintenance & Repair
+                <br />
+                <span className="sm:text-4xl lg:text-6xl text-3xl">
+                  Keeping Your Fleet in Top Condition
+                </span>
+              </h1>
+              <p className="text-white text-sm sm:text-base mb-8 max-w-[480px] mx-auto">
+                Welcome to our company, where we specialize in the maintenance and repair of naval vessels. We are dedicated to ensuring that your fleet remains seaworthy, reliable, and ready for any mission. Trust us to keep your ships in optimal condition with expert service and commitment to excellence.
+              </p>
+            </motion.div>
+            <motion.div
+              variants={{
+                visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, x: -75 },
+              }}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.5, delay: 1 }}
+            >
+              
+            </motion.div>
           </div>
         </div>
-      </div>
 
-      {/* component from tailgrids end */}
+        {/* Stars Image */}
+        
+      </div>
     </div>
   );
-}
+};
 
-export default Herosection
+export default Herosection;
