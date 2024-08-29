@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "../../Navigation/Navbar";
 import Footer from "../../Footer/Footer";
 import { useAnimation, useInView, motion } from "framer-motion";
-import TeamImage from "../../../images/Team/team1.png";
+import TeamImage from "../../../images/4-1024x684.jpeg";
 
 const About = () => {
   const ref = useRef();
@@ -85,7 +85,7 @@ const About = () => {
           </h1>
           <div className="flex justify-center mb-16">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.39567994609!2d-80.3118583441288!3d25.782538870990084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL%2C%20USA!5e0!3m2!1sen!2sch!4v1686508959774!5m2!1sen!2sch"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4820.846802531921!2d10.177243885501527!3d36.8953658497628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb1ae6ef65d3%3A0x47949104f322561f!2sR%C3%A9sidence%20Babel%2C%20Cit%C3%A9%20Ghazala!5e1!3m2!1sen!2stn!4v1724955986551!5m2!1sen!2stn"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

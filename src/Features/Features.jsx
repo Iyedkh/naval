@@ -5,8 +5,8 @@ import logo3 from "../../src/images/Features/f3.png";
 import logo4 from "../../src/images/Features/f4.png";
 import logo5 from "../../src/images/Features/f5.png";
 import logo6 from "../../src/images/Features/f6.png";
-import image1 from "../../src/images/Features/fb11.png";
-import image2 from "../../src/images/Features/fb22.png";
+import image1 from "../../src/images/1.jpg";
+import image2 from "../../src/images/2.jpg";
 import { useAnimation, useInView, motion } from "framer-motion";
 
 const Features = () => {
