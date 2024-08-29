@@ -83,8 +83,6 @@ const Herosection = () => {
             </motion.div>
           </div>
         </div>
-
-        {/* Stars Image */}
         
       </div>
     </div>
