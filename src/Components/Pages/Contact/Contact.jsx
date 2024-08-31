@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../Navigation/Navbar";
 import Footer from "../../Footer/Footer";
-
+import Image from "../../../images/4-1024x684.jpeg"
 const Contact = () => {
   return (
     <div>
@@ -90,8 +90,10 @@ const Contact = () => {
                 </div>
               </div>
               <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+              
                 <div class="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
-                 
+                  <div className="h-full w-full"><img src={Image} alt="" /></div>
+                
                   <div>
                     <span class="absolute -top-10 -right-9 z-[-1]">
                       <svg

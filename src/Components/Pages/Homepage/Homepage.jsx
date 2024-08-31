@@ -15,9 +15,6 @@ const Homepage = () => {
       <Herosection/>
       <Slides/>
       <Features/>
-      <CardComponent/>
-      <CallToAction/>
-      <Review/>
       <Footer/>
     </>
   );

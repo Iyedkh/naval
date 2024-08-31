@@ -73,12 +73,7 @@ const CallToAction = () => {
                       transition={{ duration: 0.4, delay: 0.5 }}
                     >
                       {" "}
-                      <button
-                        href="#"
-                        class="my-1 inline-block rounded bg-[#1c9b7b] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9"
-                      >
-                        Get Started
-                      </button>
+                      
                     </motion.div>
                   </div>
                 </div>
