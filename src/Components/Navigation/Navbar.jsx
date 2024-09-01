@@ -41,7 +41,7 @@ const Navbar = () => {
             {/* Language Switcher Flags for Desktop */}
             <div className="hidden sm:flex items-center ml-4">
               <button onClick={() => changeLanguage('en')} className="mx-1">
-                <span className="flag-icon flag-icon-us" title="English"></span>
+                <span className="flag-icon flag-icon-gb" title="English"></span>
               </button>
               <button onClick={() => changeLanguage('fr')} className="mx-1">
                 <span className="flag-icon flag-icon-fr" title="French"></span>
@@ -75,7 +75,7 @@ const Navbar = () => {
           {/* Language Switcher Flags for Mobile */}
           <div className="flex justify-center mt-4">
             <button onClick={() => changeLanguage('en')} className="mx-1">
-              <span className="flag-icon flag-icon-us" title="English"></span>
+              <span className="flag-icon flag-icon-gb" title="English"></span>
             </button>
             <button onClick={() => changeLanguage('fr')} className="mx-1">
               <span className="flag-icon flag-icon-fr" title="French"></span>
