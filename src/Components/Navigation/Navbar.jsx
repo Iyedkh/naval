@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import 'flag-icon-css/css/flag-icons.min.css'; // Import flag icons CSS
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
               Egt Naval Services
             </span>
           </Link>
-          <div className="flex">
+          <div className="flex items-center">
             <ul className="sm:flex justify-center hidden">
               <li className="p-2 mr-4 text-white hover:text-blue-400 cursor-pointer">
                 <Link to="/">{i18n.t('Home')}</Link>
@@ -37,18 +38,18 @@ const Navbar = () => {
                 <Link to="/contact">{i18n.t('Contact')}</Link>
               </li>
             </ul>
-          </div>
-          <div className="flex items-center">
-            {/* Language Switcher Buttons */}
-            <button onClick={() => changeLanguage('en')} className="text-white mx-1">
-              EN
-            </button>
-            <button onClick={() => changeLanguage('fr')} className="text-white mx-1">
-              FR
-            </button>
-            <button onClick={() => changeLanguage('ar')} className="text-white mx-1">
-              AR
-            </button>
+            {/* Language Switcher Flags for Desktop */}
+            <div className="hidden sm:flex items-center ml-4">
+              <button onClick={() => changeLanguage('en')} className="mx-1">
+                <span className="flag-icon flag-icon-us" title="English"></span>
+              </button>
+              <button onClick={() => changeLanguage('fr')} className="mx-1">
+                <span className="flag-icon flag-icon-fr" title="French"></span>
+              </button>
+              <button onClick={() => changeLanguage('ar')} className="mx-1">
+                <span className="flag-icon flag-icon-tn" title="Arabic"></span>
+              </button>
+            </div>
             <button onClick={() => setOpen(!open)} className="sm:hidden block">
               <GiHamburgerMenu size={30} className="mt-2 mr-2 text-white/70" />
             </button>
@@ -71,6 +72,18 @@ const Navbar = () => {
               <Link to="/contact">{i18n.t('Contact')}</Link>
             </li>
           </ul>
+          {/* Language Switcher Flags for Mobile */}
+          <div className="flex justify-center mt-4">
+            <button onClick={() => changeLanguage('en')} className="mx-1">
+              <span className="flag-icon flag-icon-us" title="English"></span>
+            </button>
+            <button onClick={() => changeLanguage('fr')} className="mx-1">
+              <span className="flag-icon flag-icon-fr" title="French"></span>
+            </button>
+            <button onClick={() => changeLanguage('ar')} className="mx-1">
+              <span className="flag-icon flag-icon-tn" title="Arabic"></span>
+            </button>
+          </div>
         </div>
       </nav>
     </div>

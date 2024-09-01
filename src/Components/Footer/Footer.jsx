@@ -58,12 +58,12 @@ const Footer = () => {
             </li>
             <li className="underline cursor-pointer">
               <a href="/services" className="hover:text-blue-400 transition-colors">
-                {t('services')}
+                {t('serv')}
               </a>
             </li>
             <li className="underline cursor-pointer">
               <a href="/contact" className="hover:text-blue-400 transition-colors">
-                {t('contact')}
+                {t('cont')}
               </a>
             </li>
           </ul>

@@ -1,39 +1,109 @@
 {
-    "welcome": "Bienvenue",
-    "description": "Bienvenue dans notre entreprise, où nous sommes spécialisés dans la maintenance et la réparation des navires. Nous nous engageons à assurer la navigabilité, la fiabilité et la préparation de votre flotte pour toute mission. Faites-nous confiance pour maintenir vos navires en condition optimale avec un service expert et un engagement envers l'excellence.",
-    "expert_naval": "Expertise en Maintenance & Réparation Navale",
-    "keeping_fleet": "Maintenir Votre Flotte en Condition Optimale",
-    "section_title": "Maintenance et Réparation Navale",
-    "section_description": "Solutions Technologiques Avancées, Personnel Formé et Analyse de Données pour Optimiser Vos Opérations Navales",
-    "innovation_title": "Innovation pour l'Industrie Maritime",
-    "innovation_description": "Améliorez vos opérations de maintenance navale avec des solutions technologiques avancées qui optimisent vos processus, intègrent des technologies innovantes et offrent un support personnalisé.",
-    "algorithms_title": "Solutions Algorithmiques Avancées",
-    "algorithms_description": "Nos algorithmes avancés optimisent vos opérations de maintenance, améliorant l'efficacité et la rentabilité. Prenez des décisions éclairées avec des données exploitables.",
-    "technology_integration_title": "Intégration de Technologies Innovantes",
-    "technology_integration_description": "Intégrez des technologies de pointe comme l'IA et l'IoT. Automatisez les tâches, améliorez la communication et libérez votre potentiel de croissance.",
-    "personnel_support_title": "Support du Personnel Formé",
-    "personnel_support_description": "Nos experts formés garantissent une mise en œuvre fluide et un support continu. Utilisez efficacement notre logiciel avec une assistance personnalisée.",
-    "data_driven_title": "Décisions Basées sur les Données, Solutions Personnalisées",
-    "data_driven_description": "Prenez des décisions éclairées grâce à notre analyse de données puissante. Nos solutions personnalisées répondent à vos besoins spécifiques en matière de maintenance navale.",
-    "analytics_title": "Capacités d'Analyse Puissantes",
-    "analytics_description": "Obtenez des informations précieuses à partir de vos données grâce à des visualisations complètes. Surveillez les indicateurs clés, suivez les tendances et identifiez les domaines à améliorer.",
-    "customized_solutions_title": "Solutions Personnalisées",
-    "customized_solutions_description": "Des solutions logicielles sur mesure pour répondre à vos besoins spécifiques. Réalisez une croissance durable en alignant vos opérations navales avec vos objectifs commerciaux.",
-    "continuous_innovation_title": "Innovation Continue et Mises à Jour",
-    "continuous_innovation_description": "Restez en avance avec les dernières fonctionnalités et améliorations. Adaptez-vous aux dynamiques du marché avec une innovation continue.",
-    "company_name": "Services EGT",
-    "footer_description": "Services EGT est votre partenaire de confiance pour l'entretien et la réparation navale. Nous offrons des services complets, y compris la réparation de machines, les systèmes électriques, l'entretien des coques et plus encore. Notre équipe d'experts est dédiée à garantir la performance et la sécurité optimales de votre navire sur les eaux.",
-    "company_info_title": "NAVAL EGT Srl",
-    "registered_office": "Siège social :",
-    "registered_office_address": "RES BABEL BLOC O APP 4 ÉTAGE 3 CITE EL GHAZALA 2083 Raoued (Arr) Tunisie",
-    "operational_headquarters": "Siège opérationnel :",
-    "operational_headquarters_address": "RES BABEL BLOC O APP 4 ÉTAGE 3 CITE EL GHAZALA 2083 Raoued (Arr) Tunisie",
-    "phone_number": "Tél. +216 xx xxx xxx",
-    "cell_number": "Cell. +216 xx xxx xxx",
-    "email_address": "info@votredomaine.com",
-    "about": "À propos",
-    "services": "Services",
-    "contact": "Contact",
-    "footer_rights_reserved": "Tous droits réservés 2023 - Services EGT"
+  "welcome": "Bienvenue",
+  "description": "Bienvenue dans notre entreprise, où nous nous spécialisons dans l'entretien et la réparation des navires. Nous nous engageons à garantir que votre flotte reste en état de navigabilité, fiable et prête pour toute mission. Faites-nous confiance pour maintenir vos navires en condition optimale grâce à notre service expert et notre engagement envers l'excellence.",
+  "expert_naval": "Expert en Maintenance et Réparation Navale",
+  "keeping_fleet": "Maintenir Votre Flotte en Parfait État",
+  "section_title": "Maintenance et Réparation Navale",
+  "section_description": "Solutions Technologiques Avancées, Personnel Formé, et Analyse des Données pour Optimiser Vos Opérations Navales",
+  "innovation_title": "Innovation pour l'Industrie Marine",
+  "innovation_description": "Améliorez vos opérations de maintenance navale avec des solutions technologiques avancées qui optimisent vos processus, intègrent des technologies innovantes et offrent un soutien personnalisé.",
+  "algorithms_title": "Solutions Algorithmiques Avancées",
+  "algorithms_description": "Nos algorithmes avancés optimisent vos opérations de maintenance, améliorant l'efficacité et la rentabilité. Prenez des décisions éclairées avec des données exploitables.",
+  "technology_integration_title": "Intégration Technologique Innovante",
+  "technology_integration_description": "Intégrez des technologies de pointe telles que l'IA et l'IoT. Automatisez les tâches, améliorez la communication et libérez votre potentiel de croissance.",
+  "personnel_support_title": "Soutien du Personnel Formé",
+  "personnel_support_description": "Nos experts formés garantissent une mise en œuvre fluide et un soutien continu. Utilisez efficacement notre logiciel avec une assistance personnalisée.",
+  "data_driven_title": "Décisions Basées sur les Données, Solutions Personnalisées",
+  "data_driven_description": "Prenez des décisions éclairées avec notre analyse de données puissante. Nos solutions personnalisées répondent à vos besoins spécifiques en maintenance navale.",
+  "analytics_title": "Capacités d'Analyse Puissantes",
+  "analytics_description": "Obtenez des informations précieuses à partir de vos données avec des visualisations complètes. Surveillez les KPI, suivez les tendances et identifiez les domaines à améliorer.",
+  "customized_solutions_title": "Solutions Personnalisées",
+  "customized_solutions_description": "Solutions logicielles sur mesure pour répondre à vos besoins spécifiques. Réalisez une croissance durable en alignant vos opérations navales avec vos objectifs commerciaux.",
+  "continuous_innovation_title": "Innovation et Mises à Jour Continues",
+  "continuous_innovation_description": "Restez à la pointe avec les dernières fonctionnalités et améliorations. Adaptez-vous aux dynamiques du marché avec une innovation continue.",
+  "company_name": "EGT Services",
+  "footer_description": "EGT Services est votre partenaire de confiance en maintenance et réparation navales. Nous offrons des services complets, y compris la réparation des machines, des systèmes électriques, l'entretien des coques, et plus encore. Notre équipe d'experts est dédiée à garantir la performance optimale et la sécurité de votre navire sur les eaux.",
+  "company_info_title": "NAVAL EGT Srl",
+  "registered_office": "Siège enregistré :",
+  "registered_office_address": "RES BABEL BLOC O APP 4 ETAGE 3 CITE EL GHAZALA 2083 Raoued (Arr) Tunisie",
+  "operational_headquarters": "Siège opérationnel :",
+  "operational_headquarters_address": "RES BABEL BLOC O APP 4 ETAGE 3 CITE EL GHAZALA 2083 Raoued (Arr) Tunisie",
+  "phone_number": "Tél. +216 xx xxx xxx",
+  "cell_number": "Cell. +216 xx xxx xxx",
+  "email_address": "info@yourdomain.com",
+  "about": "À propos",
+  "serv": "Services",
+  "cont": "Contact",
+  "footer_rights_reserved": "Tous droits réservés 2023 - EGT Services",
+  "whoWeAreTitle": "Qui sommes-nous et pourquoi sommes-nous si bons ?",
+  "aboutUsText": "Dans notre entreprise, nous nous spécialisons dans la fourniture de services de maintenance et de réparation de premier ordre pour l'industrie navale. Avec une équipe dédiée de techniciens et d'ingénieurs qualifiés, nous nous engageons à garantir la sécurité, la fiabilité et la longévité de vos navires. De l'entretien routinier aux réparations complexes, nos solutions innovantes sont conçues pour maintenir vos opérations en douceur et efficacement. Faites-nous confiance pour être votre partenaire dans le maintien des plus hauts standards de performance et de sécurité en mer.",
+  "findUsTitle": "Où nous trouver",
+  "services": {
+    "title": "Nos Services !",
+    "servicesList": [
+      {
+        "name": "Conception et Ingénierie Navale",
+        "description": "Offrant des solutions complètes de conception et d'ingénierie pour des projets navals, y compris des conceptions conceptuelles et détaillées, la modélisation 3D et l'optimisation."
+      },
+      {
+        "name": "Rédaction des Spécifications Techniques",
+        "description": "Nous préparons des spécifications détaillées pour le cale sèche et les modifications, en veillant à leur conformité et à leur alignement avec les objectifs du projet."
+      },
+      {
+        "name": "Gestion de Projet",
+        "description": "Nous gérons l'ensemble du cycle de vie du projet, y compris la coordination, la planification, la gestion des risques et l'assurance qualité pour garantir le succès."
+      },
+      {
+        "name": "Supervision des Travaux à Bord et sur Site",
+        "description": "Services de supervision professionnels pour garantir que les travaux à bord et sur site sont réalisés selon les normes et spécifications les plus élevées."
+      },
+      {
+        "name": "Services Techniques",
+        "description": "Nous offrons une gamme de services techniques comprenant des scans 3D, des inspections à distance, des enquêtes, et plus encore, adaptés à vos besoins."
+      },
+      {
+        "name": "Activités de Charpenterie et de Tuyauterie",
+        "description": "Expertise en charpenterie et tuyauterie avec des matériaux traditionnels et innovants, y compris les plastiques et les composites."
+      },
+      {
+        "name": "Systèmes Électriques",
+        "description": "Fourniture de services de conception, d'installation et de maintenance pour les systèmes électriques marins, garantissant fiabilité et sécurité."
+      },
+      {
+        "name": "Mécanique et Moteurs",
+        "description": "Services complets pour les moteurs marins et les systèmes mécaniques, y compris le diagnostic, les réparations et les optimisations."
+      },
+      {
+        "name": "Systèmes Hydrauliques",
+        "description": "Conception, installation et maintenance de systèmes hydrauliques, adaptés aux besoins uniques des applications maritimes."
+      },
+      {
+        "name": "Automatisation et Capteurs de Terrain",
+        "description": "Systèmes d'automatisation avancés et de capteurs pour surveiller et optimiser les opérations maritimes, améliorant l'efficacité et la sécurité."
+      },
+      {
+        "name": "Systèmes HVAC",
+        "description": "Service complet pour les systèmes HVAC, y compris la conception, l'installation et la maintenance pour garantir un contrôle climatique optimal."
+      },
+      {
+        "name": "Préparation des Surfaces et Peinture",
+        "description": "Services de préparation des surfaces et de peinture pour les navires marins, utilisant des techniques et des matériaux à la pointe de la technologie pour garantir la longévité."
+      },
+      {
+        "name": "Équipements Spéciaux",
+        "description": "Installation et maintenance d'équipements marins spécialisés adaptés aux besoins opérationnels spécifiques de votre navire."
+      }
+    ]
+  },
+  "contact": {
+    "contactUs": "Contactez-nous",
+    "title": "ENTREZ EN CONTACT AVEC NOUS",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "ourLocation": "Notre Emplacement",
+    "address": "RES BABEL BLOC O APP 4 ETAGE 3 CITE EL GHAZALA 2083 Raoued (Arr) Tunisie",
+    "phoneNumber": "Numéro de Téléphone",
+    "phone": "(+216) XX XXX XXX",
+    "email": "Adresse Email",
+    "emailAddress": "info@yourdomain.com"
   }
-  
+}

@@ -2,7 +2,9 @@ import React from "react";
 import Navbar from "../../Navigation/Navbar";
 import Footer from "../../Footer/Footer";
 import Image from "../../../images/4-1024x684.jpeg"
+import { useTranslation } from 'react-i18next';
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Navbar />
@@ -14,16 +16,13 @@ const Contact = () => {
               <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
                 <div class="mb-12 max-w-[570px] lg:mb-0 pl-4">
                   <span class="text-blue-600 mb-4 block text-base font-semibold">
-                    Contact Us
+                  {t('contact.contactUs')}
                   </span>
                   <h2 class="text-black mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                    GET IN TOUCH WITH US
+                  {t('contact.title')}
                   </h2>
                   <p class="text-gray-700 mb-9 text-base leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eius tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim adiqua minim veniam quis nostrud exercitation
-                    ullamco
+                  {t('contact.description')}
                   </p>
                   <div class="mb-8 flex w-full max-w-[370px]">
                     <div class="bg-blue-400/20 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded  sm:h-[70px] sm:max-w-[70px]">
@@ -38,10 +37,10 @@ const Contact = () => {
                     </div>
                     <div class="w-full">
                       <h4 class="text-dark mb-1 text-xl font-bold">
-                        Our Location
+                      {t('contact.ourLocation')}
                       </h4>
                       <p class="text-body-color text-base">
-                      RES BABEL BLOC O APP 4 ETAGE 3 CITE EL GHAZALA 2083 Raoued (Arr) Tunisia
+                      {t('contact.address')}
                       </p>
                     </div>
                   </div>
@@ -59,11 +58,11 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div class="w-full">
-                      <h4 class="text-dark mb-1 text-xl font-bold">
-                        Phone Number
+                    <h4 className="text-dark mb-1 text-xl font-bold">
+                        {t('contact.phoneNumber')}
                       </h4>
-                      <p class="text-body-color text-base">
-                      (+216) XX XXX XXX
+                      <p className="text-body-color text-base">
+                        {t('contact.phone')}
                       </p>
                     </div>
                   </div>
@@ -79,11 +78,11 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div class="w-full">
-                      <h4 class="text-dark mb-1 text-xl font-bold">
-                        Email Address
+                    <h4 className="text-dark mb-1 text-xl font-bold">
+                        {t('contact.email')}
                       </h4>
-                      <p class="text-body-color text-base">
-                        info@yourdomain.com
+                      <p className="text-body-color text-base">
+                        {t('contact.emailAddress')}
                       </p>
                     </div>
                   </div>

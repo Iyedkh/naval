@@ -3,11 +3,13 @@ import Navbar from "../../Navigation/Navbar";
 import Footer from "../../Footer/Footer";
 import { useAnimation, useInView, motion } from "framer-motion";
 import TeamImage from "../../../images/4-1024x684.jpeg";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const ref = useRef();
   const isInView = useInView(ref);
   const mainControls = useAnimation();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (isInView) {
@@ -33,7 +35,7 @@ const About = () => {
               className="flex justify-center text-center"
             >
               <h1 className="flex justify-center text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-500 font-extrabold text-[3rem]">
-                Who are we and why are we so good?
+                {t('whoWeAreTitle')}
               </h1>
             </motion.div>
 
@@ -71,7 +73,7 @@ const About = () => {
                 className="sm:w-1/2 w-full text-center sm:text-left"
               >
                 <h3 className="text-lg text-blue-500 leading-relaxed">
-                At our company, we specialize in providing top-tier maintenance and repair services for the naval industry. With a dedicated team of skilled technicians and engineers, we are committed to ensuring the safety, reliability, and longevity of your vessels. From routine maintenance to complex repairs, our innovative solutions are designed to keep your operations running smoothly and efficiently. Trust us to be your partner in maintaining the highest standards of performance and safety at sea
+                  {t('aboutUsText')}
                 </h3>
               </motion.div>
             </div>
@@ -81,7 +83,7 @@ const About = () => {
         {/* Where You Can Find Us Section */}
         <div className="container mx-auto py-16">
           <h1 className="text-center font-extrabold sm:text-4xl mt-6 text-2xl mb-10">
-            Where you can find us
+            {t('findUsTitle')}
           </h1>
           <div className="flex justify-center mb-16">
             <iframe
