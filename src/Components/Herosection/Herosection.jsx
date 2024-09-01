@@ -9,6 +9,7 @@ import heroImage from '../../images/kokeshi-9DLoHFsfi3g-unsplash.jpg';
 import heroImage2 from '../../images/nopparuj-lamaikul-K0UZ0dxFaDk-unsplash.jpg';
 import heroImage3 from '../../images/vidar-nordli-mathisen-GsuPuCpVcN4-unsplash.jpg';
 import { motion } from 'framer-motion';
+import Icon from "../../images/logo-removebg-preview.png";
 
 const Herosection = () => {
   const { t } = useTranslation(); // Use the hook
@@ -43,6 +44,14 @@ const Herosection = () => {
               animate="visible"
               transition={{ duration: 0.5, delay: 0.25 }}
             >
+              <div className="flex flex-col items-center justify-center space-y-4">
+                <img
+                src={Icon}
+                alt="icon"
+                className="h-26 w-24 sm:h-38 sm:w-38" // Adjust sizes accordingly
+              />
+              </div>
+               
               <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-600 font-bold leading-snug text-2xl sm:text-4xl lg:text-6xl mb-3">
                 {t('expert_naval')}
                 <br />

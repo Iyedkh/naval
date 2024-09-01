@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import 'flag-icon-css/css/flag-icons.min.css'; // Import flag icons CSS
-
+import Icon from "../../images/logo-removebg-preview.png";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { i18n } = useTranslation(); // Get i18n object
@@ -19,8 +19,13 @@ const Navbar = () => {
         {/* Desktop nav */}
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:p-4 pb-2">
           <Link to="/" className="flex items-center">
+          <img
+              src={Icon}
+              alt="icon"
+              className="hidden sm:block sm:w-[35px] sm:-h-[35px] "
+            />
             <span className="ml-2 mt-2 sm:mt-0 text-white font-semibold text-xl">
-              Egt Naval Services
+              EGT Naval Services
             </span>
           </Link>
           <div className="flex items-center">
