@@ -9,57 +9,57 @@ import heroImage from '../../images/kokeshi-9DLoHFsfi3g-unsplash.jpg';
 import heroImage2 from '../../images/nopparuj-lamaikul-K0UZ0dxFaDk-unsplash.jpg';
 import heroImage3 from '../../images/vidar-nordli-mathisen-GsuPuCpVcN4-unsplash.jpg';
 import { motion } from 'framer-motion';
-import Icon from "../../images/logo-removebg-preview.png";
+import Icon from "../../images/logo.png";
 
 const Herosection = () => {
   const { t } = useTranslation(); // Use the hook
 
   return (
     <div className="font-poppins overflow-x-hidden relative">
-      <div className="relative bg-[#e0e0e0]">
+      <div className="relative bg-gray-200">
         <Swiper
           modules={[Autoplay, Pagination]}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           loop={true}
           speed={1500}
-          className="h-[80vh] w-full"
+          className="h-[90vh] w-full"
         >
           <SwiperSlide>
-            <img src={heroImage} alt="hero1" className="w-full h-full object-cover" />
+            <img src={heroImage} alt="Naval ship in the ocean" className="w-full h-full object-cover" loading="lazy" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={heroImage2} alt="hero2" className="w-full h-full object-cover" />
+            <img src={heroImage2} alt="Ship maintenance crew" className="w-full h-full object-cover" loading="lazy" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={heroImage3} alt="hero3" className="w-full h-full object-cover" />
+            <img src={heroImage3} alt="Docked ship at sunset" className="w-full h-full object-cover" loading="lazy" />
           </SwiperSlide>
         </Swiper>
 
-        <div className="absolute inset-0 z-10 flex items-center justify-center px-10">
-          <div className="max-w-4xl text-center bg-black bg-opacity-50 p-8 rounded-lg">
+        <div className="absolute inset-0 z-10 flex items-center justify-center px-6 sm:px-10">
+          <div className="max-w-4xl text-center bg-black bg-opacity-60 p-6 sm:p-8 rounded-lg shadow-xl">
             <motion.div
-              variants={{ visible: { opacity: 1, y: 0 }, hidden: { opacity: 0, y: 75 } }}
+              variants={{ visible: { opacity: 1, y: 0 }, hidden: { opacity: 0, y: 50 } }}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.5, delay: 0.25 }}
+              transition={{ duration: 0.7, delay: 0.25 }}
             >
-              <div className="flex flex-col items-center justify-center space-y-4">
+              <div className="flex flex-col items-center justify-center space-y-4 mb-6">
                 <img
-                src={Icon}
-                alt="icon"
-                className="h-26 w-24 sm:h-38 sm:w-38" // Adjust sizes accordingly
-              />
+                  src={Icon}
+                  alt="Company logo"
+                  className="h-20 w-20 sm:h-32 sm:w-32 bg-white bg-opacity-50 rounded-3xl" // Adjust sizes accordingly
+                />
               </div>
-               
-              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-600 font-bold leading-snug text-2xl sm:text-4xl lg:text-6xl mb-3">
+
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-500 font-bold leading-snug text-2xl sm:text-3xl lg:text-4xl xl:text-3xl mb-4">
                 {t('expert_naval')}
                 <br />
-                <span className="sm:text-4xl lg:text-6xl text-3xl">
+                <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-3xl">
                   {t('keeping_fleet')}
                 </span>
               </h1>
-              <p className="text-white text-sm sm:text-base mb-8 max-w-[480px] mx-auto">
+              <p className="text-white text-xs sm:text-base lg:text-lg max-w-[480px] mx-auto">
                 {t('description')}
               </p>
             </motion.div>
