@@ -1,4 +1,8 @@
 {
+  "nav-home": "Accueil",
+  "nav-about": "À propos",
+  "nav-services": "Services",
+  "nav-contact": "Contact",
   "welcome": "Bienvenue",
   "description": "Bienvenue dans notre entreprise, où nous nous spécialisons dans l'entretien et la réparation des navires. Nous nous engageons à garantir que votre flotte reste en état de navigabilité, fiable et prête pour toute mission. Faites-nous confiance pour maintenir vos navires en condition optimale grâce à notre service expert et notre engagement envers l'excellence.",
   "expert_naval": "Expert en Maintenance et Réparation Navale",

@@ -7,7 +7,7 @@ import Icon from "../../images/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const { i18n } = useTranslation(); // Get i18n object
+  const { t, i18n } = useTranslation(); // Get t function and i18n object
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -16,29 +16,29 @@ const Navbar = () => {
 
   return (
     <div className=" fixed max-w-screen overflow-x-hidden font-poppins z-20">
-      <nav className="fixed bg-black  px-4 py-3 sm:py-4 w-full z-20  ">
+      <nav className="fixed bg-black px-4 py-3 sm:py-4 w-full z-20">
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img src={Icon} alt="icon" className="hidden sm:block h-20 w-24" /> {/* Increased size */}
             <span className="ml-2 text-white font-semibold text-lg">
-              EGT Naval Services
+               EGT Naval Services
             </span>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/" className="text-white hover:text-blue-400 transition duration-300">
-              {i18n.t('Home')}
+              {t('nav-home')}
             </Link>
             <Link to="/about" className="text-white hover:text-blue-400 transition duration-300">
-              {i18n.t('About')}
+              {t('nav-about')}
             </Link>
             <Link to="/services" className="text-white hover:text-blue-400 transition duration-300">
-              {i18n.t('Services')}
+              {t('nav-services')}
             </Link>
             <Link to="/contact" className="text-white hover:text-blue-400 transition duration-300">
-              {i18n.t('Contact')}
+              {t('nav-contact')}
             </Link>
 
             {/* Language Switcher */}
@@ -67,22 +67,22 @@ const Navbar = () => {
             <ul className="flex flex-col items-center py-4">
               <li className="mb-2">
                 <Link to="/" className="text-white hover:text-blue-400 transition duration-300" onClick={() => setOpen(false)}>
-                  {i18n.t('Home')}
+                  {t('nav-home')}
                 </Link>
               </li>
               <li className="mb-2">
                 <Link to="/about" className="text-white hover:text-blue-400 transition duration-300" onClick={() => setOpen(false)}>
-                  {i18n.t('About')}
+                  {t('nav-about')}
                 </Link>
               </li>
               <li className="mb-2">
                 <Link to="/services" className="text-white hover:text-blue-400 transition duration-300" onClick={() => setOpen(false)}>
-                  {i18n.t('Services')}
+                  {t('nav-services')}
                 </Link>
               </li>
               <li className="mb-2">
                 <Link to="/contact" className="text-white hover:text-blue-400 transition duration-300" onClick={() => setOpen(false)}>
-                  {i18n.t('Contact')}
+                  {t('nav-contact')}
                 </Link>
               </li>
             </ul>
