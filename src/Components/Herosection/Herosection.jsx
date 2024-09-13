@@ -23,7 +23,7 @@ const Herosection = () => {
           pagination={{ clickable: true }}
           loop={true}
           speed={1500}
-          className="h-[90vh] w-full"
+          className="h-[100vh] w-full"
         >
           <SwiperSlide>
             <img src={heroImage} alt="Naval ship in the ocean" className="w-full h-full object-cover" loading="lazy" />
@@ -37,31 +37,31 @@ const Herosection = () => {
         </Swiper>
 
         <div className="absolute inset-0 z-10 flex items-center justify-center px-6 sm:px-10">
-          <div className="max-w-4xl text-center bg-black bg-opacity-60 p-6 sm:p-8 rounded-lg shadow-xl">
+          <div className="max-w-5xl text-center bg-black bg-opacity-60 p-8 sm:p-2 rounded-lg shadow-xl">
             <motion.div
               variants={{ visible: { opacity: 1, y: 0 }, hidden: { opacity: 0, y: 50 } }}
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.7, delay: 0.25 }}
             >
-              <div className="flex flex-col items-center justify-center space-y-4 mb-6">
+              <div className="flex flex-col items-center justify-center">
                 <img
                   src={Icon}
                   alt="Company logo"
-                  className="h-20 w-20 sm:h-32 sm:w-32 bg-white bg-opacity-50 rounded-3xl" // Adjust sizes accordingly
+                  className="h-32 w-32 sm:h-96 sm:w-96 mb-4" // Adjust sizes and keep margin if needed
                 />
+                {/* Keep h1 and p elements below the logo */}
+                <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-500 font-bold leading-snug text-2xl sm:text-3xl lg:text-4xl xl:text-3xl mb-4">
+                  {t('expert_naval')}
+                  <br />
+                  <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-3xl">
+                    {t('keeping_fleet')}
+                  </span>
+                </h1>
+                <p className="text-white text-xs sm:text-base lg:text-lg max-w-[600px] mx-auto">
+                  {t('description')}
+                </p>
               </div>
-
-              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-500 font-bold leading-snug text-2xl sm:text-3xl lg:text-4xl xl:text-3xl mb-4">
-                {t('expert_naval')}
-                <br />
-                <span className="text-2xl sm:text-3xl lg:text-4xl xl:text-3xl">
-                  {t('keeping_fleet')}
-                </span>
-              </h1>
-              <p className="text-white text-xs sm:text-base lg:text-lg max-w-[480px] mx-auto">
-                {t('description')}
-              </p>
             </motion.div>
           </div>
         </div>

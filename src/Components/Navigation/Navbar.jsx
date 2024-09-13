@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={Icon} alt="icon" className="hidden sm:block h-12 w-12" /> {/* Increased size */}
+            <img src={Icon} alt="icon" className="hidden sm:block h-20 w-24" /> {/* Increased size */}
             <span className="ml-2 text-white font-semibold text-lg">
               EGT Naval Services
             </span>
