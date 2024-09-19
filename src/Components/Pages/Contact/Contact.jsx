@@ -22,7 +22,7 @@ const Contact = () => {
                   {t('contact.title')}
                   </h2>
                   <p class="text-gray-700 mb-9 text-base leading-relaxed">
-                  {t('contact.description')}
+                  
                   </p>
                   <div class="mb-8 flex w-full max-w-[370px]">
                     <div class="bg-blue-400/20 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded  sm:h-[70px] sm:max-w-[70px]">
@@ -62,7 +62,8 @@ const Contact = () => {
                         {t('contact.phoneNumber')}
                       </h4>
                       <p className="text-body-color text-base">
-                        {t('contact.phone')}
+                       +216 24 444 450 <br />
+                       +216 26 943 423
                       </p>
                     </div>
                   </div>
@@ -81,9 +82,9 @@ const Contact = () => {
                     <h4 className="text-dark mb-1 text-xl font-bold">
                         {t('contact.email')}
                       </h4>
-                      <p className="text-body-color text-base">
-                        {t('contact.emailAddress')}
-                      </p>
+                      <a className="text-body-color text-base">
+                        contact@egtnavalservices.com
+                      </a>
                     </div>
                   </div>
                 </div>

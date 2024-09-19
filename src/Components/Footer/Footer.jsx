@@ -22,14 +22,7 @@ const Footer = () => {
           <p className="py-4 text-sm sm:text-base">
             {t('footer_description')}
           </p>
-          <div className="flex justify-start sm:justify-between my-6 space-x-4 text-blue-200">
-            {/* Social Media Icons */}
-            <FaFacebookSquare size={30} className="cursor-pointer" />
-            <FaDribbbleSquare size={30} className="cursor-pointer" />
-            <FaInstagram size={30} className="cursor-pointer" />
-            <FaGithubSquare size={30} className="cursor-pointer" />
-            <FaTwitterSquare size={30} className="cursor-pointer" />
-          </div>
+         
         </div>
       </div>
       {/* Footer Top Section End */}
@@ -45,7 +38,7 @@ const Footer = () => {
           <p>{t('operational_headquarters_address')}</p>
           <p className="mt-4">{t('phone_number')}</p>
           <p>{t('cell_number')}</p>
-          <p>{t('email_address')}</p>
+          <p>contact@egtnavalservices.com</p>
         </div>
 
         {/* Legal Links */}
