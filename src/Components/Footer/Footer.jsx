@@ -1,13 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  FaFacebookSquare,
-  FaInstagram,
-  FaTwitterSquare,
-  FaDribbbleSquare,
-  FaGithubSquare,
-} from 'react-icons/fa';
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   const { t } = useTranslation();
 
@@ -45,19 +38,19 @@ const Footer = () => {
         <div className="flex flex-col items-start md:items-start">
           <ul className="space-y-2 text-left md:text-left">
             <li className="underline cursor-pointer">
-              <a href="/about" className="hover:text-blue-400 transition-colors">
+              <Link to="/about" className="hover:text-blue-400 transition-colors">
                 {t('about')}
-              </a>
+              </Link>
             </li>
             <li className="underline cursor-pointer">
-              <a href="/services" className="hover:text-blue-400 transition-colors">
+              <Link to="/services" className="hover:text-blue-400 transition-colors">
                 {t('serv')}
-              </a>
+              </Link>
             </li>
             <li className="underline cursor-pointer">
-              <a href="/contact" className="hover:text-blue-400 transition-colors">
+              <Link to="/contact" className="hover:text-blue-400 transition-colors">
                 {t('cont')}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

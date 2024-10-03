@@ -21,7 +21,7 @@ const About = () => {
     <div>
       <Navbar />
       <div className="max-w-screen overflow-hidden font-poppins">
-        <div className="sm:h-screen h-[80rem] -mb-20 sm:mb-0 bg-gradient-to-b from-gray-100/10 to-gray-200/50 pt-20">
+        <div className="sm:h-screen h-[80rem] -mb-20 sm:mb-0 bg-gradient-to-b from-gray-100/10 to-gray-200/50 sm:pt-20 ">
           <div className="mt-20">
             <motion.div
               ref={ref}
