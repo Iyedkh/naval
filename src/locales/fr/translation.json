@@ -1,4 +1,12 @@
 {
+  "contact.email":"email",
+  "contact.sendMessage":"Contact",
+  "contact.name":"Name",
+  "contact.namePlaceholder":"Name",
+  "contact.emailPlaceholder":"Email",
+  "contact.message":"Message",
+  "contact.messagePlaceholder":"Message",
+  "contact.send":"Envoyer",
   "nav-home": "Accueil",
   "nav-about": "À propos",
   "nav-services": "Services",
@@ -110,4 +118,5 @@
     "email": "Adresse Email",
     "emailAddress": "info@yourdomain.com"
   }
+  
 }

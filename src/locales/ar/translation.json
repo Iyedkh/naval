@@ -1,4 +1,13 @@
 {
+  
+  "contact.email": "البريد الإلكتروني",
+  "contact.sendMessage": "اتصل",
+  "contact.name": "الاسم",
+  "contact.namePlaceholder": "أدخل اسمك",
+  "contact.emailPlaceholder": "أدخل بريدك الإلكتروني",
+  "contact.message": "الرسالة",
+  "contact.messagePlaceholder": "أدخل رسالتك",
+  "contact.send": "إرسال",
   "nav-home": "الرئيسية",
   "nav-about": "حول",
   "nav-services": "الخدمات",

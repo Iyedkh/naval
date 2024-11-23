@@ -1,4 +1,12 @@
 {
+  "contact.email":"email",
+  "contact.sendMessage":"Contact",
+  "contact.name":"Name",
+  "contact.namePlaceholder":"Name",
+  "contact.emailPlaceholder":"Email",
+  "contact.message":"Message",
+  "contact.messagePlaceholder":"Message",
+  "contact.send":"Send",
   "nav-home": "Home",
   "nav-about": "About",
   "nav-services": "Services",
